@@ -1,0 +1,423 @@
+/*
+ ADMIN.SCSS  
+Author : Muhammad alendra
+Github : https://github.com/opsahmad
+*/
+/* google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Roboto&display=swap");
+/* font-family: 'Libre Franklin', sans-serif; */
+/* colot */
+/* font size */
+* {
+  padding: 0;
+  scroll-behavior: smooth;
+  scroll-margin-top: 100px;
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+#pageContent {
+  position: relative;
+  min-width: 320px;
+  width: 100%;
+  overflow: hidden;
+  /* universal in content */
+}
+
+#pageContent .sidebar {
+  position: relative;
+  z-index: 70;
+  width: 300px;
+  min-height: 100vh;
+  max-width: 300px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#63cdd7ff), to(#0093b7ff));
+  background: linear-gradient(top, #63cdd7ff, #0093b7ff);
+  text-align: center;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  padding-left: 50px;
+  padding-right: 20px;
+}
+
+#pageContent .sidebar .wrap {
+  height: 100%;
+  position: fixed;
+}
+
+#pageContent .sidebar .bars {
+  margin: 25px 0;
+  cursor: pointer;
+}
+
+#pageContent .sidebar .bars div {
+  width: 25px;
+  height: 4px;
+  border-radius: 7px;
+  margin: 5px 0;
+  background-color: #fff;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+#pageContent .sidebar .bars:hover div {
+  opacity: 1;
+}
+
+#pageContent .sidebar ul li {
+  list-style: none;
+}
+
+#pageContent .sidebar ul li.active {
+  font-weight: bold;
+}
+
+#pageContent .sidebar ul li.active a {
+  font-size: 24px;
+}
+
+#pageContent .sidebar ul li.active:hover a {
+  font-size: 24px;
+}
+
+#pageContent .sidebar ul li:hover a {
+  font-size: 18.5px;
+}
+
+#pageContent .sidebar ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+  opacity: 0.6;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+#pageContent .sidebar ul li a:hover, #pageContent .sidebar ul li a.active {
+  opacity: 1;
+}
+
+#pageContent .sidebar.small {
+  padding-left: 30px;
+  width: 80px;
+}
+
+#pageContent .sidebar.small .sidebar-title {
+  display: none;
+}
+
+#pageContent .bottom-nav {
+  position: fixed;
+  background: #fff;
+  bottom: 0px;
+  left: 0px;
+  width: calc(100% - 0px);
+  z-index: 50;
+  border-radius: 0px 0px 0 0;
+  -webkit-box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+#pageContent .bottom-nav .block {
+  min-width: 25%;
+}
+
+#pageContent .bottom-nav .block .icon {
+  font-size: 28px;
+}
+
+#pageContent .bottom-nav .block .text {
+  font-size: 12px;
+}
+
+#pageContent .bottom-nav a {
+  text-decoration: none;
+  color: #000;
+  opacity: 0.6;
+}
+
+#pageContent .bottom-nav a.active {
+  opacity: 1;
+  color: #0093b7ff;
+}
+
+#pageContent .bottom-nav a:hover {
+  opacity: 1;
+}
+
+#pageContent .nav-admin {
+  min-width: 320px;
+  height: 80px;
+  padding: 5px 0;
+  position: relative;
+  -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+  z-index: 60;
+}
+
+#pageContent .nav-admin .logo img {
+  height: 24px;
+}
+
+@media screen and (max-width: 575px) {
+  #pageContent .nav-admin .logo img {
+    max-width: 150px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  #pageContent .nav-admin .logo img {
+    max-width: 100px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+}
+
+#pageContent .nav-admin .section-title h1 {
+  font-size: 24px;
+  font-weight: normal;
+}
+
+#pageContent .nav-admin .profile {
+  background: -webkit-gradient(linear, left bottom, left top, from(#f3f3f3), to(#f3f3f3));
+  background: linear-gradient(bottom, #f3f3f3, #f3f3f3);
+  border-radius: 10px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+#pageContent .nav-admin .profile.focus {
+  background: -webkit-gradient(linear, left top, left bottom, from(#63cdd7ff), to(#0093b7ff));
+  background: linear-gradient(top, #63cdd7ff, #0093b7ff);
+}
+
+#pageContent .nav-admin .profile.focus .button {
+  color: #fff;
+}
+
+#pageContent .nav-admin .profile img {
+  width: 40px;
+  height: 40px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#pageContent .nav-admin .profile .profile-popup {
+  width: 165px;
+  position: absolute;
+  right: 45px;
+  top: 71px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#63cdd7ff), to(#0093b7ff));
+  background: linear-gradient(top, #63cdd7ff, #0093b7ff);
+  padding: 20px;
+  border-radius: 8px;
+  height: auto;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+#pageContent .nav-admin .profile .profile-popup.hide {
+  height: 0;
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+#pageContent .nav-admin .profile .profile-popup ul li {
+  list-style: none;
+}
+
+#pageContent .nav-admin .profile .profile-popup ul li a {
+  color: #fff;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  text-decoration: none;
+}
+
+#pageContent .nav-admin .profile .profile-popup ul li a:hover {
+  opacity: 1;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 991px) {
+  #pageContent .nav-admin .profile .profile-popup {
+    right: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #pageContent .nav-admin .profile .profile-popup {
+    width: 140px;
+    right: 15px;
+  }
+}
+
+#pageContent .nav-admin .bell {
+  font-size: 24px;
+}
+
+#pageContent .nav-admin .notification-popup {
+  position: absolute;
+  top: 100px;
+  right: 20px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#63cdd7ff), to(#0093b7ff));
+  background: linear-gradient(top, #63cdd7ff, #0093b7ff);
+  border-radius: 10px;
+  padding: 20px;
+  width: 400px;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  /* hide notification */
+}
+
+#pageContent .nav-admin .notification-popup.hide {
+  right: 0px;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+#pageContent .nav-admin .notification-popup .title {
+  font-size: 24px;
+  color: #fff;
+}
+
+#pageContent .nav-admin .notification-popup .item {
+  font-size: 16px;
+  color: #fff;
+}
+
+@media screen and (max-width: 574px) {
+  #pageContent .nav-admin .notification-popup {
+    width: calc(100% - 40px);
+  }
+}
+
+#pageContent .nav-admin .buble-notification {
+  position: absolute;
+  background-color: #f35454;
+  border-radius: 100%;
+  min-width: 20px;
+  min-height: 16px;
+  padding: 2px;
+  font-size: 12px;
+  text-align: center;
+  color: #fff;
+}
+
+#pageContent .notif-and-profile {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+#pageContent #AdminDashboard .card .title {
+  font-size: 24px;
+  opacity: 0.7;
+}
+
+#pageContent #profileAdmin #profileCardAdmin {
+  margin-top: -150px;
+}
+
+#pageContent #profileAdmin #profileCardAdmin .card .title {
+  font-size: 20px;
+}
+
+#pageContent #profileAdmin .profile .person img {
+  width: 120px;
+  height: 120px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+#pageContent #profileAdmin .profile .icon {
+  position: absolute;
+  top: 110px;
+  margin-right: -60px;
+}
+
+#pageContent #profileAdmin .name {
+  font-size: 24px;
+}
+
+#pageContent #headerAdminProfile {
+  background: url(./image/banner.png);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 400px;
+}
+
+#pageContent #OrderDashboard .top .sort .caption {
+  color: #666666;
+}
+
+#pageContent h1.section-title {
+  color: #666666;
+  font-size: 24px;
+}
+
+/* universal */
+.pointer {
+  cursor: pointer;
+}
+
+.btn.btn-blue {
+  background-color: #0093b7ff;
+  color: #fff;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.btn.btn-blue:hover {
+  background-color: #005f89ff;
+  color: #fff;
+}
+
+.btn.btn-green {
+  background-color: transparent;
+  color: #2FCA5A;
+  border: 1px solid #2FCA5A;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.btn.btn-green:hover {
+  background-color: #2FCA5A;
+  color: #fff;
+}
+
+.btn.btn-red {
+  background-color: transparent;
+  color: #EF8680;
+  border: 1px solid #EF8680;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.btn.btn-red:hover {
+  background-color: #EF8680;
+  color: #fff;
+}
+
+input:focus, input:active {
+  border: 1px solid #0093b7ff !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+select:focus, select:active {
+  border: 1px solid #0093b7ff !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+button:focus, button:active {
+  border: 1px solid #0093b7ff !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+/*# sourceMappingURL=admin.css.map */
