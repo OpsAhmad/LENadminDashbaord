@@ -4,11 +4,13 @@
     <!-- Meta -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <title>Form</title>
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <!-- my style -->
     <link rel="stylesheet" href="./css/admin.css">
+    <!-- select2 -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
 </head>
 <body>
 
@@ -31,12 +33,12 @@
                         <a href="./dashboard.html" class="d-flex align-items-center"><span class="iconify" data-icon="ant-design:pie-chart-outlined" data-inline="false"></span> <div class="text ml-2 ml-lg-3 sidebar-title">Dashboard</div> </a>
                     </li>
                     <!-- table -->
-                    <li class="side-link py-2 mb-4 active">
-                        <a href="./table.html" class="d-flex align-items-center active">  <span class="iconify" data-icon="ant-design:borderless-table-outlined" data-inline="false"></span>  <div class="text ml-2 ml-lg-3 sidebar-title">Table</div> </a>
+                    <li class="side-link py-2 mb-4">
+                        <a href="./table.html" class="d-flex align-items-center">  <span class="iconify" data-icon="ant-design:borderless-table-outlined" data-inline="false"></span>  <div class="text ml-2 ml-lg-3 sidebar-title">Table</div> </a>
                     </li>
                     <!-- form -->
-                    <li class="side-link py-2 mb-4">
-                        <a href="./form.html" class="d-flex align-items-center">  <span class="iconify" data-icon="clarity:form-line" data-inline="false"></span>  <div class="text ml-2 ml-lg-3 sidebar-title">Form</div> </a>
+                    <li class="side-link py-2 mb-4 active">
+                        <a href="./form.html" class="d-flex align-items-center active">  <span class="iconify" data-icon="clarity:form-line" data-inline="false"></span>  <div class="text ml-2 ml-lg-3 sidebar-title">Form</div> </a>
                     </li>
                     <!-- typohraphy -->
                     <li class="side-link py-2 mb-4">
@@ -60,7 +62,6 @@
     </div>
 </div>
 <!-- //sidebar -->
-
 <!-- bottom nav -->
 <div class="bottom-nav pb-3 d-flex d-md-none overflow-auto">
     <!-- menu links -->
@@ -77,7 +78,7 @@
     <!-- /menu links -->
     <!-- menu links -->
     <div class="block d-flex justify-content-center w-100 overflow-auto">
-        <a href="./table.html" class="link active">
+        <a href="./table.html" class="link">
             <div class="item d-flex flex-column justify-content-center align-items-center">
                 <div class="icon">
                     <span class="iconify" data-icon="ant-design:borderless-table-outlined" data-inline="false"></span>
@@ -89,7 +90,7 @@
     <!-- /menu links -->
     <!-- menu links -->
     <div class="block d-flex justify-content-center w-100 overflow-auto">
-        <a href="./form.html" class="link">
+        <a href="./form.html" class="link active">
             <div class="item d-flex flex-column justify-content-center align-items-center">
                 <div class="icon">
                     <span class="iconify" data-icon="clarity:form-line" data-inline="false"></span>
@@ -240,184 +241,69 @@
 
             <!-- content here -->
             <div class="px-3 px-md-5 py-5" id="AdminDashboard">
-                <h1 class="section-title mb-5">Tables</h1>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="card p-1 border-0">
-                            <div class="title mb-2">Basic</div>
-                            <table class="table">
-                            <thead>
-                              <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">First</th>
-                                <th scope="col">Last</th>
-                                <th scope="col">Handle</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                              </tr>
-                              <tr>
-                                <th scope="row">2</th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
-                              </tr>
-                              <tr>
-                                <th scope="row">3</th>
-                                <td>Larry</td>
-                                <td>the Bird</td>
-                                <td>@twitter</td>
-                              </tr>
-                            </tbody>
-                          </table>
-                       </div>
+                <h1 class="section-title mb-5">Form</h1>
+                <form action="" class="form" style="max-width: 767px;">
+                    <div class="form-group">
+                        <small>Text input</small>
+                        <input type="text" name="" id="" name="" class="form-control">
                     </div>
-                    <div class="col-12 mt-4">
-                        <div class="card p-1 border-0">
-                            <div class="title mb-2">Bordered</div>
-                            <table class="table table-bordered">
-                            <thead>
-                              <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">First</th>
-                                <th scope="col">Last</th>
-                                <th scope="col">Handle</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                              </tr>
-                              <tr>
-                                <th scope="row">2</th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
-                              </tr>
-                              <tr>
-                                <th scope="row">3</th>
-                                <td>Larry</td>
-                                <td>the Bird</td>
-                                <td>@twitter</td>
-                              </tr>
-                            </tbody>
-                          </table>
-                       </div>
+                    <div class="form-group">
+                        <small>Number input</small>
+                        <input type="number" name="" id="" name="" class="form-control">
                     </div>
-                    <div class="col-12 mt-4">
-                        <div class="card p-1 border-0">
-                            <div class="title mb-2">Stripped</div>
-                            <table class="table table-striped">
-                            <thead>
-                              <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">First</th>
-                                <th scope="col">Last</th>
-                                <th scope="col">Handle</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                              </tr>
-                              <tr>
-                                <th scope="row">2</th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
-                              </tr>
-                              <tr>
-                                <th scope="row">3</th>
-                                <td>Larry</td>
-                                <td>the Bird</td>
-                                <td>@twitter</td>
-                              </tr>
-                            </tbody>
-                          </table>
-                       </div>
+                    <div class="form-group">
+                        <small>Date input</small>
+                        <input type="date" name="" id="" name="" class="form-control">
                     </div>
-                    <div class="col-12 mt-4">
-                        <div class="card p-1 border-0">
-                            <div class="title mb-2">Hover</div>
-                            <table class="table table-hover">
-                            <thead>
-                              <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">First</th>
-                                <th scope="col">Last</th>
-                                <th scope="col">Handle</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                              </tr>
-                              <tr>
-                                <th scope="row">2</th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
-                              </tr>
-                              <tr>
-                                <th scope="row">3</th>
-                                <td>Larry</td>
-                                <td>the Bird</td>
-                                <td>@twitter</td>
-                              </tr>
-                            </tbody>
-                          </table>
-                       </div>
+                    <div class="form-group">
+                        <small>Readonly</small>
+                        <input type="text" name="" id="" name="" class="form-control" value="your secret code" readonly>
                     </div>
-                    <div class="col-12">
-                        <div class="card p-1 border-0">
-                            <div class="title mb-2">With Color</div>
-                            <table class="table">
-                            <thead>
-                              <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">First</th>
-                                <th scope="col">Last</th>
-                                <th scope="col">Handle</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr class="table-danger">
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                              </tr>
-                              <tr class="table-success">
-                                <th scope="row">2</th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
-                              </tr>
-                              <tr>
-                                <th scope="row">3</th>
-                                <td>Larry</td>
-                                <td>the Bird</td>
-                                <td>@twitter</td>
-                              </tr>
-                            </tbody>
-                          </table>
-                       </div>
+                    <div class="form-group d-flex align-items-center">
+                        <div class="text mr-4" style="min-width: fit-content;">Plain :</div>
+                        <input type="text" name="" id="" name="" class="form-control-plaintext" value="your secret code" readonly>
                     </div>
-                </div>
+                    <div class="form-group">
+                        <small>Select</small>
+                        <select class="select2 w-100" multiple="multiple">
+                            <option value="one">one</option>
+                            <option value="two">two</option>
+                            <option value="three">three</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <small>Select Multiple</small>
+                        <select class="select2 w-100" multiple="multiple">
+                            <option value="one">one</option>
+                            <option value="two">two</option>
+                            <option value="three">three</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <small>Upload image:</small>
+                        <div class="file-upload py-3">
+                            <input type="file" name="" id="" class="pointer" accept=".png,.jpg,.jpeg" onchange="preview(this)">
+                            <img src="./image/folder.svg" alt="" class="imagePreview">
+                            <div class="text text-center mt-2">Click here or drop file <br> max: 2mb</div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <small>Upload video:</small>
+                        <div class="file-upload py-3">
+                            <input type="file" name="" id="" class="pointer" accept=".mp4" onchange="preview(this)">
+                            <video src="" class="videoPreview d-none" controls></video>
+                            <div class="text text-center mt-2">Click here or drop file <br> max: 2mb</div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <small>Upload file:</small>
+                        <div class="file-upload py-3">
+                            <input type="file" name="" id="" class="pointer" accept="" onchange="preview(this)">
+                            <img src="./image/folder.svg" alt="" class="imagePreview">
+                            <div class="text text-center mt-2">Click here or drop file <br> max: 2mb</div>
+                        </div>
+                    </div>
+                </form>
             </div>
         <!-- /content here -->
         </div>
@@ -431,6 +317,8 @@
         <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
         <!-- apex chart -->
         <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+        <!-- select2 -->
+        <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
         <!-- myscript -->
         <script src="./js/admin.js"></script>
         <!-- /script -->

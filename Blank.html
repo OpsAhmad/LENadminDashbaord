@@ -53,8 +53,8 @@
                             <a href="./cards.html"  class="d-flex align-items-center">   <span class="iconify" data-icon="ic:outline-credit-card" data-inline="false"></span> <div class="text ml-2 ml-lg-3 sidebar-title">Card</div> </a>
                         </li>
                         <!-- Modals -->
-                        <li class="side-link py-2 mb-4 active">
-                            <a href="./modals.html"  class="d-flex align-items-center active"><span class="iconify" data-icon="entypo:popup" data-inline="false"></span>  <div class="text ml-2 ml-lg-3 sidebar-title">Modal</div> </a>
+                        <li class="side-link py-2 mb-4">
+                            <a href="./modals.html"  class="d-flex align-items-center"><span class="iconify" data-icon="entypo:popup" data-inline="false"></span>  <div class="text ml-2 ml-lg-3 sidebar-title">Modal</div> </a>
                         </li>
                         <!-- Buttons -->
                         <li class="side-link py-2 mb-4">
@@ -135,7 +135,7 @@
         <!-- /menu links -->
         <!-- menu links -->
         <div class="block d-flex justify-content-center w-100 overflow-auto">
-            <a href="./modals.html" class="link active">
+            <a href="./modals.html" class="link">
                 <div class="item d-flex flex-column justify-content-center align-items-center">
                     <div class="icon">
                         <span class="iconify" data-icon="entypo:popup" data-inline="false"></span>
@@ -260,65 +260,7 @@
             page here
         ------------------------------------------------------------------->
         <div class="px-3 px-md-5 py-5" id="AdminDashboard">
-            <h1 class="section-title mb-5">Modals</h1>
-            <div class="">
-                <div class="fs-1">Alert</div>
-                <button class="btn btn-primary" onclick="swal('Hello!')">Alert!</button>
-                <button class="btn btn-success" onclick="swal('Success!','Task completed','success')">Success!</button>
-                <button class="btn btn-warning" onclick="swal('Warning!','You not authorize','warning')">Success!</button>
-                <button class="btn btn-danger" onclick="swal('Error!','You not authorize','error')">Success!</button>
-            </div>
-            <div class="mt-4">
-                <div class="fs-1">Confirm</div>
-                <a class="btn btn-danger need-confirm-delete" href="/delete" onclick="return false //prevent redirect">Delete</a>
-                <a class="btn btn-primary need-confirm-logout" href="/logout" onclick="return false //prevent redirect">Logout</a>
-            </div>
-            <div class="mt-4">
-                <div class="fs-1">Modals</div>
-                <button class="btn btn-primary toggle-modal" data-modal="modal-tos">Terms & Conditions</button>
-                <button class="btn btn-primary toggle-modal" data-modal="modal-form">Form</button>
-            </div>
-        </div>
-
-        <!-- modals -->
-        <div class="popup" id="modal-tos">
-            <div class="box">
-                <div class="header">
-                    <div class="fs-4 mt-2">Terms & Conditions</div>
-                </div>
-                <div class="body fs-7 fs-md-6">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae harum aliquam, repudiandae eligendi possimus veniam accusantium, inventore sint, temporibus rerum quo omnis eius. Quo nostrum pariatur debitis adipisci et, soluta rem earum molestiae alias, voluptatibus quos, autem fugiat molestias iusto incidunt facere natus omnis quam id laboriosam nihil mollitia? Iure officiis sit ab alias magni nisi! Expedita, ut quia harum libero, praesentium saepe nihil, provident ducimus iste rem delectus atque a porro? Earum enim assumenda, sapiente eum repellat, esse temporibus, adipisci quae commodi hic quidem possimus nobis suscipit dolorem molestias laboriosam quasi amet. Quidem quas eos ad aspernatur debitis! Tenetur quidem voluptate repellendus cupiditate ipsam quaerat, impedit possimus, alias excepturi quibusdam debitis unde blanditiis fuga, dignissimos sequi fugiat placeat rerum dolore odio delectus corporis. Iure omnis qui iste labore, ad commodi odio accusamus odit fugit dolor saepe velit iusto voluptas. Perspiciatis et repellendus labore eius, illo magnam laudantium voluptatem quasi, quidem nesciunt rerum eaque. Repellat soluta maiores fugit voluptate, dignissimos modi unde nulla asperiores tenetur sapiente iste alias cum possimus eveniet rerum vel ipsa. Mollitia, dicta aspernatur doloribus itaque non odit molestiae minima libero dolores nesciunt explicabo error qui optio sint doloremque, delectus placeat quo ex deleniti quidem alias amet?
-                </div>
-                <div class="footer">
-                    <button class="btn btn-secondary px-4" id="close-button">Close</button>
-                    <button class="btn btn-primary px-4 ml-1" id="accept-button">Accept</button>
-                </div>
-            </div>
-        </div>
-        <div class="popup" id="modal-form">
-            <div class="box">
-                    <div class="header">
-                        <div class="fs-4 mt-2">Terms & Conditions</div>
-                    </div>
-                    <div class="body fs-7 fs-md-6">
-                        <div class="form-group">
-                            <small>Text input</small>
-                            <input type="text" name="" id="" name="" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <small>Number input</small>
-                            <input type="number" name="" id="" name="" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <small>Date input</small>
-                            <input type="date" name="" id="" name="" class="form-control">
-                        </div>
-                    </div>
-                    <div class="footer">
-                        <button class="btn btn-secondary px-4" id="close-button">Close</button>
-                        <button class="btn btn-primary px-4 ml-1" id="accept-button">Save</button>
-                    </div>
-            </div>
+            <h1 class="section-title mb-5">Title here</h1>
         </div>
         <!------------------------------------------------------------------
                 /page here
@@ -342,8 +284,6 @@
 <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 <!-- apex chart -->
 <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-<!-- using sweet alert -->
-<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <!-- select2 -->
 <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 <script>
